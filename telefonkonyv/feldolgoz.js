@@ -6,16 +6,11 @@ $(function () {
 });
 var telefonkonyvem = [];
 function kiir() {
-//    var nev = $("#nev").val();
-//    var tel = $("#tel").val();
-//    var kep = $("#kep").val();
+
     $("article").empty();
     for (var i = 0; i < telefonkonyvem.length; i++) {
-        var ID = telefonkonyvem[i].ID;
-        var nev = telefonkonyvem[i].nev;
-        var tel = telefonkonyvem[i].tel;
-        var kep = telefonkonyvem[i].kep;
-        var elem = "<div><h2>" + nev + "</h2><p>" + tel + "</p> <p>" + kep + "</p><button class='torol' id='"+ID+"'>Töröl</button></div>";
+       let szemely =telefonkonyvem[i];
+       let elem = "<div><h2>" + szemely.nev + "</h2><p>" + szemely.tel + "</p> <p>" + szemely.kep + "</p><button class='torol' id='"+szemely.ID+"'>Töröl</button><button class='szerkeszt' id='"+i+"'>Szerekszt</button><hr></div>";
         $("article").append(elem);
     }
 

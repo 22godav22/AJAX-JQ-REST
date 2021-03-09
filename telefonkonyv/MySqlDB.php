@@ -14,7 +14,7 @@ class MySqlDB {
         $this->db_jelszo = "";
         $this->db_nev = "telefon";
         $this->kapcsolat();
-//               $this->db_szerver = "tanulo14.szf1a.oktatas.szamalk-szalezi.hu";
+//        $this->db_szerver = "tanulo14.szf1a.oktatas.szamalk-szalezi.hu";
 //        $this->db_felhnev = "c1_tanulo14szf1a";
 //        $this->db_jelszo = "_tanulo14szf1a";
 //        $this->db_nev = "c1ABtanulo14szf1a";
